@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-image: linear-gradient(to bottom, pink,purple);
+  }
+#a{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    text-size-adjust: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <h1>INVISTICO AIRLINE</h1><br>
+    <div id="a">
+    <form action="/predict" method="post">
+
+        <h2> RATE THE FOLLOWING METRICS FROM 0-5</h2>
+        <br>
+        Seat Comfort<input type="text" name="seat_comfort" id="seat_comfort"><br><br>
+        Departure/Arrival time<input type="text" name="departure_arrival_time" id="departure_arrival_time"><br><br>
+        Food and Drinks<input type="text" name="food_and_drinks" id="food_and_drinks"><br><br>
+        Gate Location<input type="text" name="gate_location" id="gate_location"><br><br>
+        Inflight Wifi service<input type="text" name="inflight_wifi_service" id="inflight_wifi_service"><br><br>
+        Inflight Entertainment<input type="text" name="inflight_entertainment" id="inflight_entertainment"><br><br>
+        Online support<input type="text" name="online_support" id="online_support"><br><br>
+        Ease of Online book<input type="text" name="ease_of_online_book" id="ease_of_online_book"><br><br>
+        Onboard Service<input type="text" name="onboard_service" id="onboard_service"><br><br>
+        Leg room Service<input type="text" name="leg_room_service" id="leg_room_service"><br><br>
+        Baggage Handling<input type="text" name="baggage_handling" id="baggage_handling"><br><br>
+        Checkin Service<input type="text" name="checkin_service" id="checkin_service"><br><br>
+        Cleanliness<input type="text" name="cleanliness" id="cleanliness"><br><br>
+        Online Boarding<input type="text" name="online_boarding" id="online_boarding"><br><br><br>
+      
+        <br>
+
+        <h2><input type="submit" value="submit"></h2>
+    </form>
+        {{ prediction_text }}
+</div>
+
+</body>
+</html>
